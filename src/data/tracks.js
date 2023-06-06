@@ -23,45 +23,45 @@ import melodies4 from "./Melodies4.ogg"
 export const tracks = {
     bass: [
         {
-            title: 'Bass1',
+            title: 'Bass-1',
             src: bass1,
         },
         {
-            title: 'Bass2',
+            title: 'Bass-2',
             src: bass2,  
         },
         {
-            title: 'Bass3',
+            title: 'Bass-3',
             src: bass3,
         },
         {
-            title: 'Bass4',
+            title: 'Bass-4',
             src: bass4,
         }, 
     ],
 
     chords:[
         {
-            title: 'Chords1',
+            title: 'Chords-1',
             src: chords1,
         },
         {
-            title: 'Chords2',
+            title: 'Chords-2',
             src: chords2,  
         },
         {
-            title: 'Chords3',
+            title: 'Chords-3',
             src: chords3,
         },
         {
-            title: 'Chords4',
+            title: 'Chords-4',
             src: chords4,
         } 
     ],
-    
+
     drums:[
         {
-            title: 'Drums1',
+            title: 'Drums-1',
             src: drums1,
         },
         {
@@ -80,19 +80,19 @@ export const tracks = {
 
     melodies:[
         {
-            title: 'Melodies1',
+            title: 'Melodies-1',
             src: melodies1,
         },
         {
-            title: 'Melodies2',
+            title: 'Melodies-2',
             src: melodies2,  
         },
         {
-            title: 'Melodies3',
+            title: 'Melodies-3',
             src: melodies3,
         },
         {
-            title: 'Melodies4',
+            title: 'Melodies-4',
             src: melodies4,
         },
     ] 
