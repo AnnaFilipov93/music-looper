@@ -1,17 +1,22 @@
-import Pad from "./Pad"
+import React, { useState } from 'react';
 
-const Team = (props) => {
+import Pad from './Pad';
 
-    const CreateTeam = (team) => {
-        team.map((item) => {
-            return (
-                <Pad key={item.title} name={item.title} toggle={false}></Pad>
-            )
-         });
-    }
+const Team = ({team}) => {
+    
+    console.log("name: " , team[0])
+    const [teamToggle,setTeamToggle] = useState(false);
 
     return (
-        <div></div>
+        <div>
+            {
+                team.map((item) => {
+                    return (
+                        <Pad key={item.title} name={item.title} teamToggle={teamToggle} setToggle={setTeamToggle}></Pad>
+                    )
+                })
+            }
+        </div>
     )
 }
 export default Team;
