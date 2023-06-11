@@ -5,9 +5,6 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    color:{
-      
-    },
     extend: {
       width: {
   

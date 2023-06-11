@@ -69,10 +69,6 @@ const Team = ({team,color}) => {
                             setTeamPlaying={setTeamPlaying}
                             color={color}
                         > 
-
-                            {/* <IconButton id={item.index} onClick={handlePlay}>
-                                {array[item.index] ?  <StopIcon sx={{ fontSize: 70 }}/> : <PlayArrowIcon sx={{ fontSize: 70 }}/>  }
-                            </IconButton> */}
                         </Pad>
                     )
                 })

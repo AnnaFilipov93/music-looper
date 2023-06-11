@@ -3,16 +3,17 @@ import React, { useState,useEffect } from 'react';
 import {tracks} from "../data/tracks.js"
 import Team from "./Team";
 
+const colorStyle = ["indigo-300", "sky-400","emerald-400","yellow-200"]
 
 const Pads = (props) => {
 
-    const colorStyle = ["#d7b3fd","#72c8fd","#0ed0be","#fcd448"];
+    // const colorStyle = ["#d7b3fd","#72c8fd","#0ed0be","#fcd448"];
 
     return (
         <div className="flex flex-col h-full w-full pb-4 divide-y">
             
             <div className="flex flex-row pb-4 items-center justify-center basis-3/6">
-                { Object.values(tracks).map((item,i) => {return(<Team team={item} color={colorStyle[i]}></Team>)})}
+                { Object.values(tracks).map((item,i) => {return(< Team key={i} team={item} color={colorStyle[i]}></Team>)})}
             </div>
 
             {/* Controller */}

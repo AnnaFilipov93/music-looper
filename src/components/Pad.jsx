@@ -9,21 +9,21 @@ import IconButton from '@mui/material/IconButton';
 
 
 
-const Pad = ({children,index,name,src,currentIndex,play,color}) => {
-    
+const Pad = ({children,index,name,src,color}) => {
 
     const [playing, setPlaying] = useState(false);
     const [onLoop, setOnLoop] = useState(false);
     const [onEnd, setOnEnd] = useState(false);
 
-    const padStyle = `box-border h-32 w-32 p-4 border-4 bg-[${playing? color : null}]`
+    const padStylePlaying = `bg-${color}`
+    const padStyleStopped = `bg-${color}/50`
 
 
     const handleOnEnd = () => {
         if(!onLoop){
             setOnEnd(true);
         }
-        return console.log("Ended");
+        return console.log(name,"Ended");
     }
 
     const handlePlay = () => {
@@ -44,7 +44,7 @@ const Pad = ({children,index,name,src,currentIndex,play,color}) => {
 
 
     return(
-        <div className={padStyle}> 
+        <div className={playing ? onLoop ? padStylePlaying + " box-border h-32 w-32 p-4 border-4 " : padStyleStopped+ " box-border h-32 w-32 p-4 border-4 " :"box-border h-32 w-32 p-4 border-4 bg-slate-300"}> 
             <div className='items-center justify-center'>
 
                 <ReactHowler
