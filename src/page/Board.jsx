@@ -3,7 +3,7 @@ import Pads from "../components/Pads";
 const Board = () => {
     //text-center items-center justify-center
     return (
-        <div className="flex flex-col box-border h-full p-4 border-4 divide-y">
+        <div className="flex flex-col box-border h-full p-4 border-4 divide-y divide-[#5e6267] bg-[#e5e7eb]">
 
             {/* Header */}
             <div className="flex flex-row pb-4 pr-1 pl-1 basis-1/6 w-full justify-between">

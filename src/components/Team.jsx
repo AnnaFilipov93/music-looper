@@ -1,9 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import ReactHowler from 'react-howler'
-
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import StopIcon from '@mui/icons-material/Stop';
-import IconButton from '@mui/material/IconButton';
 
 
 import Pad from './Pad';
@@ -54,7 +49,7 @@ const Team = ({team,color}) => {
 
     return (
         <div>
-            {team[0].title.split("-")[0]}
+            <div className='pb-1 text-[#5e6267] font-semibold'>{team[0].title.split("-")[0]}</div>
             {
                 team.map((item) => {
                     return (
