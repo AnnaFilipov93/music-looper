@@ -7,7 +7,7 @@ import StopIcon from '@mui/icons-material/Stop';
 import IconButton from '@mui/material/IconButton';
 
 
-
+// const colorStyle = ["indigo-300", "sky-400","emerald-400","yellow-200"]
 
 const Pad = ({children,index,name,src,color}) => {
 
