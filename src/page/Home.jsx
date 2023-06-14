@@ -6,7 +6,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1>
+            {/* <h1>
                 Home page  
             </h1>
 
@@ -14,7 +14,9 @@ const Home = () => {
 
             <div>
                 <Link to="/board">Try without a user</Link>
-            </div>
+            </div> */}
+
+            <Board/>
             
         </div>
     )

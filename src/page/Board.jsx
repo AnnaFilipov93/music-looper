@@ -1,7 +1,10 @@
-import Pads from "../components/Pads";
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
+
 import icon from "../icon2.png"
+
+import Pads from "../components/Pads";
+import UserMenu from "../components/UserMenu"
 
 const Board = () => {
     //text-center items-center justify-center
@@ -14,9 +17,7 @@ const Board = () => {
                     <img src={icon}/>
                 </div>
                 <div className="box-border order-last">
-                    <IconButton onClick={()=> console.log("hi")} >
-                        <MenuIcon size={'large'}/>
-                    </IconButton>
+                <UserMenu/>
                 </div>
             </div>
 
